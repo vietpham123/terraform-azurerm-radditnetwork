@@ -1,16 +1,3 @@
-terraform {
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "~>2.0"
-    }
-  }
-}
-
-provider "azurerm" {
-  features {}
-}
-
 # Create virtual network
 resource "azurerm_virtual_network" "hashinet" {
   name                = "vpVnet"
